@@ -1,0 +1,176 @@
+<div class="modal fade " id="modalVehicle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title  " id="myModalLabel"> Details of : {{vehiclex.registration_no}}  </h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            
+            
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+              <div class="vehicleBlock">
+              <span>
+              <label for="class">Registration Dt.:</label>
+              <span id="class">{{vehiclex.registration_dt | date:'dd/MM/yyyy'}}</span>
+              </span>
+              <span class="pull-right">
+              <label for="class">Issue Dt.:</label>
+              <span id="class">{{vehiclex.dt_of_issue | date:'dd/MM/yyyy'}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Chassis No:</label>
+              <span id="class">{{vehiclex.chassis_no}}</span>
+              </span>
+              <span class="pull-right">
+              <label for="class">Engine No:</label>
+              <span id="class">{{vehiclex.engine_no}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Trailor Chassis No:</label>
+              <span id="class">{{vehiclex.trailor_chassis_no}}</span>
+               </span>
+               <span class="pull-right">
+              <label for="class">Maker:</label>
+              <span id="class">{{vehiclex.makers_name}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Type:</label>
+              <span id="class">{{vehiclex.type_of_body}}</span>
+              </span>
+              <span class="pull-right">
+              <label for="class">Model:</label>
+              <span id="class">{{vehiclex.model}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Tax Expiry:</label>
+              <span id="class">{{vehiclex.tax_exp_dt | date:'dd/MM/yyyy'}}</span>
+              </span>
+              
+              <span class="pull-right">
+              <label for="class">Fitness Expiry:</label>
+              <span id="class">{{vehiclex.ft_exp_dt | date:'dd/MM/yyyy'}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">NPA Expiry:</label>
+              <span id="class">{{vehiclex.npa_exp_dt | date:'dd/MM/yyyy'}}</span>
+              </span>
+              
+              <span class="pull-right">
+              <label for="class">NPB Expiry:</label>
+              <span id="class">{{vehiclex.npb_exp_dt | date:'dd/MM/yyyy'}}</span>
+              </span>
+              <br>
+              <span>
+               <label for="class">Seller:</label>
+              <span id="class">{{vehiclex.seller}}</span>
+              </span>
+              <br>
+              <span >
+              <label for="class">Owner:</label>
+              <span id="class">{{vehiclex.owner}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Owner Son Of:</label>
+              <span id="class">{{vehiclex.owner_son_of}}</span>
+              </span>
+              <br>
+              <span >
+              <label for="class">Owner Perm Address:</label>
+              <span id="class">{{vehiclex.owner_permanent_address}}</span>
+              </span>
+              <br>
+              <span>
+              <label for="class">Owner Temp Address:</label>
+              <span id="class">{{vehiclex.owner_temporary_address}}</span>
+              </span>
+             </div>
+             </div>
+
+
+             
+
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  ">
+              <div class="vehicleBlock">
+              <label for="class">Wheel Base:</label>
+              <span id="class">{{vehiclex.wheel_base}}</span>
+             
+              <br>
+              <label for="class">Unladen Wt.:</label>
+              <span id="class">{{vehiclex.unladen_weight}} kgs</span>
+              <br>
+              <label for="class">Gross Wt. Manufacture:</label>
+              <span id="class">{{vehiclex.gross_vehicle_wt_manf}} kgs</span>
+              <br>
+              <label for="class">Gross Wt. Reg:</label>
+              <span id="class">{{vehiclex.gross_vehicle_wt_reg}} kgs</span>
+               <br>
+              <label for="class">Front Axle:</label>
+              <span id="class">{{vehiclex.front_axle}}</span>
+              <br>
+              <label for="class">Rear Axle:</label>
+              <span id="class">{{vehiclex.rear_axle}}</span>
+              <br>
+              <label for="class">Any Other Axle:</label>
+              <span id="class">{{vehiclex.any_other_axle}}</span>
+              <br>
+              <label for="class">Tandem Axle:</label>
+              <span id="class">{{vehiclex.tandem_axle}}</span>
+               <label for="class">Class:</label>
+              <span id="class">{{vehiclex.class_of_vehicle}}</span>
+             
+              <br>
+              <label for="class">Cylinder:</label>
+              <span id="class">{{vehiclex.no_of_cylinders}}</span>
+              <br>
+              <label for="class">Fuel:</label>
+              <span id="class">{{vehiclex.fuel}}</span>
+              <br>
+              <label for="class">Color:</label>
+              <span id="class">{{vehiclex.color}}</span>
+              <br>
+              <label for="class">HP:</label>
+              <span id="class">{{vehiclex.hp}}</span>
+              <br>
+              <label for="class">Cubic Capacity:</label>
+              <span id="class">{{vehiclex.cubic_capacity}}</span>
+               <br>
+              <label for="class">Seating Capacity:</label>
+              <span id="class">{{vehiclex.seating_capacity}}</span>
+              </div>
+              
+             </div>
+
+             <!--  2 START-->
+
+            
+             <!--  3 START-->
+
+            
+            
+             
+              <!--  4 START-->
+          </div> <!-- ROW -->
+
+        </div>    
+
+      </div> <!-- MODAL BODY -->
+
+       <div class="modal-footer">
+       <span class="pull-left">
+        <button type="button" class="btn btn-success">Renew Documents</button>
+        </span>
+        <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

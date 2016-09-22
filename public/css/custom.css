@@ -1,0 +1,169 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul.nav > li:hover{
+  background-color: red;
+} 
+
+
+
+ul.navbar-right > li:hover{
+ background-color: green; 
+}
+
+.dashboardNum{
+  font-size: 50px;
+}
+
+.dashboardText{
+  font-size: 25px;
+}
+
+
+
+
+
+.block{
+  border-style: solid;
+  border-width: 1px;
+  /*border-color: red;*/
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  /*background-color: red;*/
+
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+/*.dbpanel>.panel-heading{
+
+ border-bottom: 1px ;
+ border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: red;
+}
+
+
+.dbpanel>.panel-body{
+ border-bottom: 1px solid;
+ border-left: 1px solid;
+ border-right: 1px solid;
+border-radius: 0px;
+border-color: red;
+ 
+} */
+
+.panel-green {
+  border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+  border-color: #5cb85c;
+  color: white;
+  background-color: #5cb85c;
+}
+.panel-green > a {
+  color: #5cb85c;
+}
+.panel-green > a:hover {
+  color: #3d8b3d;
+}
+.panel-red {
+  border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+  border-color: #d9534f;
+  color: white;
+  background-color: #d9534f;
+}
+.panel-red > a {
+  color: #d9534f;
+}
+.panel-red > a:hover {
+  color: #b52b27;
+}
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+  border-color: #f0ad4e;
+  color: white;
+  background-color: #f0ad4e;
+}
+.panel-yellow > a {
+  color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+  color: #df8a13;
+}
+
+.block-inline{
+  display: inline;
+  border: 1px solid white;
+  text-align:center;
+  padding-left: 4px;
+  margin-right: 3px;
+  
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+
+/*#vehTable>thead{
+  background-color: grey;
+  color:white;
+} */
+
+
+ .st-sort-ascent:before{
+    content: '\25B2';
+  }
+
+  .st-sort-descent:before{
+    content: '\25BC';
+  }
+
+#vehTable> tbody{
+  font-size: 11px;
+}
+
+
+#modalVehicle > .modal-dialog{
+  width:90%;
+  font-size: 13px;
+
+}
+
+
+
+.vehicleBlock{
+  padding: 4px;
+  display:block;
+  border: 1px solid;
+  border-color: silver;
+  margin-bottom: 2px;
+  background-color:  #F8F8F8;
+
+}
+
+.modal-header , .modal-footer{
+  background-color: #428bca;
+  color:white;
+}
+
+
+
+

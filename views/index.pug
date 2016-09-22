@@ -1,5 +1,66 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block page-wrapper
+  .row
+    .col-lg-12
+      br
+      span Here is list of vehicles registered with us
+      br
+      br
+      div(style="overflow-x:auto;")
+        table.table.table-condensed.table-responsive.table-hover.table-striped#vehTable
+          thead
+            tr
+              td Reg No
+              td Owner
+              td Class
+              td Maker
+              td Type
+              td Chassis
+              td Tax expiry
+              td CF expiry
+              td NP(A) expiry
+              td NP(B) expiry
+              td
+
+          tbody
+            tr
+              td UP16/AD1222
+              td Neeraj Dhingra Shar
+              td Dont Know
+              td Mahindra
+              td Truck
+              td 34444444444444
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 
+                button.btn.btn-xs.btn-primary Renew Now
+            tr
+              td UP16/AD1222
+              td Neeraj
+              td Dont Know
+              td Mahindra
+              td Truck
+              td 34444444444444
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 
+                button.btn.btn-xs.btn-primary Renew Now
+            tr
+              td UP16/AD1222
+              td Neeraj
+              td Dont Know
+              td Mahindra
+              td Truck
+              td 34444444444444
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 12/89/2016
+              td 
+                button.btn.btn-xs.btn-primary Renew Now
+

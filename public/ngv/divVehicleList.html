@@ -1,0 +1,55 @@
+<div class="row">
+   
+     <div style="overflow-x:auto">
+       <table st-table="disVehicleList" st-safe-src="vehicleList" class="table table-striped table-condensed" id="vehTable">
+         <thead>
+           <tr>
+             <th st-sort="registration_no" st-skip-natural="true" st-sort-default="true">Reg No</th>
+             <th>Owner</th>
+             <th>Class</th>
+             <th>Maker</th>
+             <th>Type</th>
+             <th>Chassis</th>
+             <th st-sort="tax_exp_dt" st-skip-natural="true">Tax expiry</th>
+             <th st-sort="ft_exp_dt" st-skip-natural="true">CF expiry</th>
+             <th st-sort="npa_exp_dt" st-skip-natural="true">NP(A) expiry</th>
+             <th st-sort="npb_exp_dt" st-skip-natural="true">NP(B) expiry</th>
+             <th></th>
+           </tr>
+        <tr>
+            
+        <th colspan="4">
+            <input st-search placeholder="filter"  type="search"/>
+        </th>
+
+        </tr>
+
+         </thead>
+         <tbody>
+         <tr ng-repeat="vehicle in disVehicleList">
+         <td ><a href="javascript:void(0);" ng-click="showVehicle(vehicle)">{{vehicle.registration_no}}</a></td>
+         <td>{{vehicle.owner}}</td>
+         <td>{{vehicle.class_of_vehicle}}</td>
+         <td>{{vehicle.makers_name}}</td>
+         <td>{{vehicle.type_of_body}}</td>
+         <td>{{vehicle.chassis_no}}</td>
+         <td>{{vehicle.tax_exp_dt| date : 'dd/MM/yyyy'}}</td>
+         <td>{{vehicle.ft_exp_dt| date : 'dd/MM/yyyy'}}</td>
+         <td>{{vehicle.npa_exp_dt| date : 'dd/MM/yyyy'}}</td>
+         <td>{{vehicle.npb_exp_dt| date : 'dd/MM/yyyy'}}</td>
+         <td> <button class="btn btn-xs btn-primary">Renew Now</button></td>
+
+         </tr>
+           
+         </tbody>
+         <tfoot>
+            <tr>
+                <td colspan="11" class="text-center">
+                    <div st-pagination="" st-items-by-page="10" st-displayed-pages="7"></div>
+                </td>
+            </tr>
+        </tfoot> 
+       </table>
+     </div>
+   </div>
+ </div>

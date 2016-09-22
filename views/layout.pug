@@ -1,7 +1,86 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title My Vahan Sewa
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='v/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='v/metisMenu/metisMenu.min.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    link(href='v/fa/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   body
+    #wrapper
+      nav.navbar.navbar-inverse.navbar-static-top(role='navigation', style='margin-bottom: 0')
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-static-top')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Vahan Sewa
+        ul.nav.navbar-top-links.navbar-left
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              i.fa.fa-dashboard.fa-fw
+              span Dashboard 
+        ul.nav.navbar-top-links.navbar-right
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              i.fa.fa-bell.fa-fw
+              i.fa.fa-caret-down
+            ul.dropdown-menu.dropdown-alerts
+              li
+                a(href='#')
+                  i.fa.fa-comment.fa-fw
+                  | New Comment
+                  span.pull-right.text-muted.small 4 minutes ago
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown', href='#')
+              i.fa.fa-user.fa-fw
+              i.fa.fa-caret-down
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href='#')
+                  i.fa.fa-user.fa-fw
+                  | User Profile
+              li
+                a(href='#')
+                  i.fa.fa-gear.fa-fw
+                  | Settings
+              li.divider
+              li
+                a(href='#')
+                  i.fa.fa-sign-out.fa-fw
+                  | Logout
+        //.navbar-default.sidebar(role='navigation')
+          .sidebar-nav.navbar-collapse
+            ul#side-menu.nav
+              li
+                a(href='/')
+                  i.fa.fa-dashboard.fa-fw
+                  | Dashboard
+              li
+                a(href='/')
+                  i.fa.fa-dashboard.fa-fw
+                  | My Fleet
+      #page-wrapper
+
+        block page-wrapper
+
+    
+    script(src='v/jquery/jquery.min.js')
+    script(src='v/bootstrap/js/bootstrap.min.js')
+    script(src='v/metisMenu/metisMenu.min.js')
+    script(src='js/client.js')    
     block content
+
+
+block scripts
